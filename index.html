@@ -1,0 +1,548 @@
+<!DOCTYPE html><!--  Last Published: Sun Jun 23 2024 15:47:55 GMT+0000 (Coordinated Universal Time)  --><html data-wf-page="66532729338dfd4dbe433595" data-wf-site="66532729338dfd4dbe433594" class=" w-mod-js"><head>
+  <meta charset="utf-8">
+  <title>$SMR-solanamoonrabbit</title>
+  <meta content="$SMR" property="twitter:title">
+  <meta content="$SMR" property="twitter:description">
+  <meta content="images/preview.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link href="webflow.css" rel="stylesheet" type="text/css">
+  <link href="dommy.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script  type="text/javascript" src="jquery-3.5.1.min.dc5e7f18c8.js"></script>
+  <script  type="text/javascript" src="webfont.js"></script>
+  <script  type="text/javascript" src="lenis.js"></script>
+  <script  type="text/javascript" src="webfont1.js"></script>
+  
+ 
+  <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+</style>
+  <style>
+/*width*/
+::-webkit-scrollbar {
+width:auto;
+}
+/*track*/
+::-webkit-scrollbar-track {
+background:rgb(255, 136, 0);
+}
+/*thumb*/
+::-webkit-scrollbar-thumb {
+background:rgb(255, 90, 0);
+}
+</style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+</style>
+    </div>
+    <div data-animation="default" class="navbar1_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="6af956de-f4de-c4cc-6090-10fffc6c777d" role="banner" data-duration="400">
+      <div class="navbar1_container">
+        <a href="#" class="navbar1_logo-link w-nav-brand"><img src="moon.jpg" loading="lazy" sizes="50px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="navbar1_logo">
+          <div class="heading-style-h3">$SMR</div>
+        </a>
+        <nav role="navigation" class="navbar1_menu is-page-height-tablet w-nav-menu">
+          <a href="#roadmap" class="navbar1_link w-nav-link">ROADMAP</a>
+          <a href="#howtobuy" class="navbar1_link w-nav-link">HOW TO BUY</a>
+          <div class="social-icons1_component">
+            <div class="w-layout-grid social-icons1_list">
+              <a href="https://x.com/solmoonrabbit" target="_blank" class="social-icons1_link w-inline-block">
+                <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z" fill="CurrentColor"></path>
+                  </svg></div>
+              </a>
+              <a href="https://t.me/solanaMoonRabbit" target="_blank" class="social-icons1_link w-inline-block">
+                <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z" fill="currentColor"></path>
+                  </svg></div>
+              </a>
+            </div>
+          </div>
+          <div class="navbar1_menu-buttons">
+            <a href="#" target="_blank" class="button is-small w-button">BUY NOW</a>
+          </div>
+        </nav>
+        <div class="navbar1_menu-button w-nav-button">
+          <div class="menu-icon1">
+            <div class="menu-icon1_line-top"></div>
+            <div class="menu-icon1_line-middle">
+              <div class="menu-icon_line-middle-inner"></div>
+            </div>
+            <div class="menu-icon1_line-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <header data-w-id="9e36964a-c4d3-07a5-758c-636e1be1fed2" class="section_header141">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="header141_component">
+                <div class="margin-bottom margin-medium">
+                  <div class="text-align-center">
+                    <div class="max-width-full">
+                      <div class="margin-bottom margin-small">
+                        <h1 class="heading-style-h1">$SMR</h1>
+                      </div>
+                        <div class="2" style="font-family: unset; color: #000;font-size: large;">The first Moon Rabbit on Solana, it will return to the Moon today！<br>
+                          这只兔子来自中国，索拉纳上的第一只月亮兔，今天它将回到MOON!</div>
+                      <div class="margin-top margin-medium">
+                        <div class="button-group is-center">
+                          <a href="#" target="_blank" class="button w-button">BUY NOW</a>
+                          <a href="#" target="_blank" class="button is-secondary w-button">CHART</a>
+                        </div>
+<div class="contract">
+  <div id="contractAddress" class="text-block">TAB</div>
+  </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header141_image-group">
+                  <div class="header141_image-wrapper2"><img src="1.png" loading="eager" sizes="45vw" srcset="1.png 500w, 1.png 750w" alt="" class="header141_image2"></div>
+                  <div class="header141_image-wrapper1"><img src="2.png" loading="eager" sizes="45vw" srcset="2.png  500w, 2.png 750w" alt="" class="header141_image1"></div>
+                  <div class="header141_image-wrapper3"><img src="3.png" loading="eager" sizes="45vw" srcset="3.png 500w, 3.png 750w" alt="" class="header141_image3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section data-w-id="5e569712-3db5-cca3-0a5a-aab2ad2c301f" class="section_banner15">
+        <div class="banner15_component">
+          <div class="banner15_inner-wrapper">
+            <div class="banner15_marquee">
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 767px) 64px, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 767px) 64px, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+              <div class="banner15_heading-wrapper">
+                <div class="heading-style-h2">$SMR</div>
+              </div>
+              <div class="banner15_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 80px" srcset="moon.jpg 500w, moon.jpg 539w" alt="" class="banner15_image"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="roadmap" class="section_layout299">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout299_component">
+                <div class="margin-bottom margin-xxlarge">
+                  <div class="max-width-large">
+                    <div class="text-align-center">
+                      <h3 class="heading-style-h3">ROADMAP</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid layout299_list">
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                      <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                          <path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m12 152a8 8 0 0 1-16 0V95l-11.56 7.71a8 8 0 1 1-8.88-13.32l24-16A8 8 0 0 1 140 80Z"></path>
+                        </svg></div>
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <h3 class="heading-style-h5">LAUNCH ON PUMP.FUN</h3>
+                    </div>
+                  </div>
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                      <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                          <path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m24 144a8 8 0 0 1 0 16h-48a8 8 0 0 1-6.4-12.8l43.17-57.56a16 16 0 1 0-27.86-15a8 8 0 0 1-15.09-5.34a32 32 0 1 1 55.74 29.93L120 168Z"></path>
+                        </svg></div>
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <h3 class="heading-style-h5">ADS AND MARKETING</h3>
+                    </div>
+                  </div>
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                      <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                          <path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m-4 164a35.7 35.7 0 0 1-25.71-10.81A8 8 0 1 1 109.71 166A20 20 0 1 0 124 132a8 8 0 0 1-6.55-12.59L136.63 92H104a8 8 0 0 1 0-16h48a8 8 0 0 1 6.55 12.59l-21 30A36 36 0 0 1 124 188"></path>
+                        </svg></div>
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <h3 class="heading-style-h5">COMMUNITY BUILDING</h3>
+                    </div>
+                  </div>
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                      <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                          <path fill="currentColor" d="M104.36 144L136 103.32V144ZM232 128A104 104 0 1 1 128 24a104.11 104.11 0 0 1 104 104m-64 24a8 8 0 0 0-8-8h-8V80a8 8 0 0 0-14.31-4.91l-56 72A8 8 0 0 0 88 160h48v16a8 8 0 0 0 16 0v-16h8a8 8 0 0 0 8-8"></path>
+                        </svg></div>
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <h3 class="heading-style-h5">FUN AND CHILL</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="howtobuy" class="section_layout34">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="margin-bottom margin-xxlarge">
+                <div class="text-align-center">
+                  <div class="max-width-large align-center">
+                    <div class="margin-bottom margin-small">
+                      <h2 class="heading">HOW TO BUY</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-layout-grid layout34_component">
+                <div class="layout34_content">
+                  <div class="w-layout-grid layout34_item-list">
+                    <div id="w-node-_99baa79b-b588-05ed-571a-8a85d3b8fc66-be433595" class="layout34_item">
+                      <div class="layout34_item-icon-wrapper">
+                        <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                              <path d="M8 13V4.5a1.5 1.5 0 0 1 3 0V12m0-.5v-2a1.5 1.5 0 0 1 3 0V12m0-1.5a1.5 1.5 0 0 1 3 0V12"></path>
+                              <path d="M17 11.5a1.5 1.5 0 0 1 3 0V16a6 6 0 0 1-6 6h-2h.208a6 6 0 0 1-5.012-2.7L7 19q-.468-.718-3.286-5.728a1.5 1.5 0 0 1 .536-2.022a1.87 1.87 0 0 1 2.28.28L8 13M5 3L4 2m0 5H3m11-4l1-1m0 4h1"></path>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="layout34_item-text-wrapper">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h5">CLICK BUY NOW</h3>
+                        </div>
+                        <p class="paragraph">Clicking this button will take you to pump.fun, where you can easily purchase $SMR.</p>
+                        <div class="margin-top margin-small">
+                          <div class="button-group">
+                            <a href="https://pump.fun" target="_blank" class="button w-button">BUY NOW</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="w-node-_99baa79b-b588-05ed-571a-8a85d3b8fc75-be433595" class="layout34_item">
+                      <div class="layout34_item-icon-wrapper">
+                        <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M21 18v1c0 1.1-.9 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14c1.1 0 2 .9 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2zm-9-2h10V8H12zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5"></path>
+                          </svg></div>
+                      </div>
+                      <div class="layout34_item-text-wrapper">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h5">CONNECT YOUR WALLET</h3>
+                        </div>
+                        <p>Connect your Solana wallet, such as Phantom or Solflare, to the pump.fun dApp.</p>
+                      </div>
+                    </div>
+                    <div id="w-node-_99baa79b-b588-05ed-571a-8a85d3b8fc84-be433595" class="layout34_item">
+                      <div class="layout34_item-icon-wrapper">
+                        <div class="icon-embed-medium w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895l-3.667-3.714l1.424-1.404l2.257 2.286l4.327-4.294l1.408 1.42l-5.749 5.706z" fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="layout34_item-text-wrapper">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h5">PLACE TRADE</h3>
+                        </div>
+                        <p>Click on BUY, choose any SOL amount and then click on PLACE TRADE to swap your SOL to $SMR.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout34_image-wrapper"><img src="moon.jpg" loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 43vw, 41vw" srcset="moon.jpg 500w,moon.jpg 539w" alt="" class="layout34_image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+	<section id="gallery" class="section_layout299">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="layout299_component">
+                <div class="margin-bottom margin-xxlarge">
+                  <div class="max-width-large">
+                    <div class="text-align-center">
+                      <h3 class="heading-style-h3">GALLERY</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid layout299_list">
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="#" id="w-node-_25905001-90f1-d692-a0d9-cefa0ee4b3f8-be433595" class="footer7_logo-link w-nav-brand"><img src="4.jpg" loading="lazy" sizes="200px" srcset="4.jpg 500w, 4.jpg 539w" alt="" class="footer-logo"></a>
+                    </div>
+                  </div>
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="#" id="w-node-_25905001-90f1-d692-a0d9-cefa0ee4b3f8-be433595" class="footer7_logo-link w-nav-brand"><img src="5.jpg" loading="lazy" sizes="200px" srcset="5.jpg 500w, 5.jpg 539w" alt="" class="footer-logo"></a>
+                    </div>
+                  </div>
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="#" id="w-node-_25905001-90f1-d692-a0d9-cefa0ee4b3f8-be433595" class="footer7_logo-link w-nav-brand"><img src="6.jpg" loading="lazy" sizes="200px" srcset="6.jpg 500w,6.jpg 539w" alt="" class="footer-logo"></a>
+                    </div>
+                  </div>
+                  <div class="layout299_item">
+                    <div class="margin-bottom margin-small">
+                    </div>
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="#" id="w-node-_25905001-90f1-d692-a0d9-cefa0ee4b3f8-be433595" class="footer7_logo-link w-nav-brand"><img src="7.jpg" loading="lazy" sizes="200px" srcset="7.jpg 500w, 7.jpg 539w" alt="" class="footer-logo"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer7_component background-color-black">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-vertical padding-xxlarge">
+              <div class="padding-bottom padding-xxlarge">
+                <div class="footer7_top-wrapper">
+                  <a href="#" id="w-node-_25905001-90f1-d692-a0d9-cefa0ee4b3f8-be433595" class="footer7_logo-link w-nav-brand"><img src="images/footer.jpg" loading="lazy" sizes="200px" srcset="images/footer.jpg 500w, images/footer.jpg 539w" alt="" class="footer-logo"></a>
+                  <div class="w-layout-grid social-icons1_list">
+                    <a href="https://x.com/solmoonrabbit" target="_blank" class="social-icons1_link w-inline-block">
+                      <div class="icon-embed-medium text-color-white w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z" fill="CurrentColor"></path>
+                        </svg></div>
+                    </a>
+                    <a href="https://t.me/solanaMoonRabbit" target="_blank" class="social-icons1_link w-inline-block">
+                      <div class="icon-embed-medium text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                          <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z" fill="currentColor"></path>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="line-divider"></div>
+              <div class="padding-top padding-medium">
+                <div class="footer7_bottom-wrapper">
+                  <div class="footer7_credit-text">© 2024 SMR. All rights reserved.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+
+</body></html>
